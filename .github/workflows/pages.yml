@@ -27,10 +27,9 @@ jobs:
       - name: Upload static site artifact
         uses: actions/upload-artifact@v4
         with:
-          path: '.'  # Use '.' ONLY if your site is at the repo root and does not include unwanted files
+          name: github-pages
+          path: '.'  # Or a folder like 'public'
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          folder: '.'  # Same as above
