@@ -607,6 +607,10 @@
 
 
                 <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-intro">
+                        <span class="contact-kicker">Let’s build something reliable</span>
+                        <p>Have a DevOps, cloud, or platform engineering opportunity? Send me a message or connect with me directly on LinkedIn.</p>
+                    </div>
                     <!-- <address class="text-center nest-address">
 
 
@@ -622,30 +626,36 @@
                     <form role="form" style="position:relative;z-index:9999;" method="POST" action="https://formspree.io/f/mlevdryy">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" name="name" class="form-control form-footer" placeholder="Your Name">
+                                <label class="contact-label" for="contact-name">Your name</label>
+                                <input id="contact-name" type="text" name="name" class="form-control form-footer" placeholder="Enter your full name">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="_subject" class="form-control form-footer" placeholder="Subject">
+                                <label class="contact-label" for="contact-subject">Subject</label>
+                                <input id="contact-subject" type="text" name="_subject" class="form-control form-footer" placeholder="What would you like to discuss?">
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col-md-12">
-                                <input type="text" name="_replyto" class="form-control form-footer" placeholder="Email">
+                                <label class="contact-label" for="contact-email">Email address</label>
+                                <input id="contact-email" type="email" name="_replyto" class="form-control form-footer" placeholder="you@example.com">
                             </div>
 
                         </div>
                         <br>
                         <div class="row">
                             <div class="col-md-12">
-
-                                <textarea class="form-control form-footer" name="message" rows="5" placeholder="Message"></textarea>
+                                <label class="contact-label" for="contact-message">Message</label>
+                                <textarea id="contact-message" class="form-control form-footer" name="message" rows="5" placeholder="Tell me about the opportunity or project..."></textarea>
                             </div>
 
                         </div>
 
                         <br>
-                        <button type="submit" class="btn bg-black text-center">Submit</button>
+                        <div class="contact-actions">
+                            <button type="submit" class="btn contact-submit text-center">Send message <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            <a href="https://www.linkedin.com/in/rajendranelakurthi/" target="_blank" rel="noopener noreferrer" class="btn contact-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i> Connect on LinkedIn</a>
+                        </div>
 
                     </form>
                     <br>

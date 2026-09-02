@@ -1879,11 +1879,20 @@ section { padding: 110px 5%; background: var(--paper); }
 
 /* Contact */
 .footer-above { position: relative; padding: 100px 5% 120px !important; background-position: center !important; }
-.footer-above:before { content: ''; position: absolute; inset: 0; background: rgba(7,17,31,.88); }
-.form-footer { height: 52px; padding: 14px 16px; color: #fff; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 11px; }
+.footer-above:before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,17,31,.82), rgba(7,17,31,.64)); }
+.contact-intro { max-width: 680px; margin: -22px auto 34px; text-align: center; }
+.contact-intro p { margin: 8px 0 0; color: rgba(255,255,255,.78); font-size: 15px; line-height: 1.7; }
+.contact-kicker { color: var(--cyan); font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+.contact-label { display: block; margin: 0 0 7px 2px; color: rgba(255,255,255,.9); font-size: 12px; font-weight: 700; letter-spacing: .3px; text-align: left; }
+.form-footer { height: 54px; padding: 14px 16px; color: #fff !important; background: rgba(7,17,31,.68); border: 1px solid rgba(255,255,255,.28); border-radius: 11px; box-shadow: inset 0 1px 0 rgba(255,255,255,.05); }
 textarea.form-footer { height: auto; }
-.form-footer:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(66,213,232,.12); }
-.footer-above .btn { padding: 13px 32px; color: var(--ink) !important; background: var(--cyan) !important; border: 0 !important; border-radius: 11px; font-weight: 800; }
+.form-footer::placeholder { color: rgba(255,255,255,.58); opacity: 1; }
+.form-footer:focus { background: rgba(7,17,31,.82); border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(66,213,232,.16); }
+.contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+.footer-above .contact-actions .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-width: 175px; padding: 14px 24px; border-radius: 11px; font-size: 13px; font-weight: 800; transition: transform .25s ease, box-shadow .25s ease; }
+.footer-above .contact-actions .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.22); }
+.footer-above .contact-submit { color: var(--ink) !important; background: var(--cyan) !important; border: 1px solid var(--cyan) !important; }
+.footer-above .contact-linkedin { color: #fff !important; background: #0a66c2 !important; border: 1px solid #3183d5 !important; }
 .footer-below { padding: 18px; color: rgba(255,255,255,.55); background: #050c16; font-size: 12px; letter-spacing: .4px; }
 
 /* Popup color alignment */
@@ -1903,6 +1912,7 @@ textarea.form-footer { height: auto; }
     .hero-copy { font-size: 15px; line-height: 1.65; }
     .hero-actions a { width: 100%; }
     .hero-tech { margin-top: 28px; }
+    .contact-actions .btn { width: 100%; }
     section { padding: 75px 18px; }
     .title-overview h2 { margin-bottom: 34px; font-size: 34px !important; }
     .e-campuz .about-nest { margin-top: 35px; padding: 25px; }
