@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Maintainer"
+  short_description: "Maintain Rajendra’s portfolio design and content"
+  default_prompt: "Update Rajendra’s portfolio while preserving its established design system, reusable company-duty popups, accessibility, and portability."
