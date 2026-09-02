@@ -227,13 +227,14 @@ li.devider-nav {
     font-size: 13px;
 }
 header {
-    text-align: center;
+    text-align: left;
     color: #fff;
     height: 100vh;
     margin: 0;
     padding: 0;
     width: 100%;
-    display: table;
+    display: block;
+    position: relative;
     /*background: rgba(0, 0, 0, 0.4);*/
 
     background-repeat: no-repeat!important;
@@ -242,6 +243,10 @@ header {
     -moz-background-size: cover!important;
     -o-background-size: cover!important;
     background-size: cover!important;
+}
+header .container-fluid {
+    position: relative;
+    height: 100%;
 }
 header .container {
     /*  padding-top: 100px;
@@ -404,13 +409,12 @@ section .ray-bottom {
     text-align: center;
 }
 .intro-text {
-     /*width: 2000px; */
-
     height: auto;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    top: 35vh;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    left: 30px;
+    top: 80px;
 }
 .intro-text h4 {
     font-weight: bold;
@@ -418,7 +422,8 @@ section .ray-bottom {
     color: #fff;
 }
 .intro-text h1 {
-    margin-bottom: 40px;
+    margin: 0 0 20px;
+    display: block;
 }
 .intro-text h1 span {
     padding: 10px 21px;
@@ -426,6 +431,7 @@ section .ray-bottom {
 
     background: #1abc9c;
     color: #fff;
+    display: inline-block;
 }
 .intro-text h4 span {
     /* background: rgba(0,0,0,0.9); */
