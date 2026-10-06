@@ -1925,3 +1925,37 @@ textarea.form-footer { height: auto; }
     html { scroll-behavior: auto; }
     .experience-card, .hero-actions a { transition: none !important; }
 }
+
+/* Responsibilities and company tools in one accessible experience popup. */
+.experience-actions { display: flex; }
+.experience-actions .job-duties-trigger:focus-visible { outline: 3px solid #1395ad; outline-offset: 3px; }
+.job-duties-panel { width: min(1060px, 100%); }
+.job-duties-body { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 28px; }
+.job-duties-body section { min-width: 0; padding: 0; background: transparent; }
+.experience-tech-stack { border-left: 1px solid #dfe8ef; padding-left: 28px !important; }
+.job-duties-body .experience-tech-stack h3 { margin-bottom: 6px; }
+.experience-tech-stack h3 i { margin-right: 7px; color: #168da3; }
+.tech-stack-caption { margin: 0 0 18px; color: #586d80; font-size: 12px; line-height: 1.5; }
+#jobTechStackList { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+#jobTechStackList li { display: flex; align-items: center; gap: 9px; margin: 0; padding: 12px 10px; min-height: 68px; color: #17324d; background: #f7fafc; border-color: #dfe8ef; font-size: 12px; font-weight: 700; }
+#jobTechStackList li:before { content: none; }
+#jobTechStackList li:hover { transform: none; border-color: #42d5e8; }
+.tech-logo { display: grid; place-items: center; flex: 0 0 36px; height: 36px; background: #fff; border-radius: 9px; }
+.tech-logo img { width: 28px; height: 28px; object-fit: contain; }
+.tech-monogram { color: #27536b; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; }
+#jobTechStackList small { display: block; margin-top: 4px; color: #586d80; font-size: 11px; line-height: 1.5; font-weight: 400; }
+@media (max-width: 800px) {
+    .job-duties-body { grid-template-columns: 1fr; gap: 24px; }
+    .experience-tech-stack { border-left: 0; border-top: 1px solid #dfe8ef; padding: 24px 0 0 !important; }
+    #jobTechStackList { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+    #jobTechStackList { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+}
+@media (max-width: 360px) {
+    #jobTechStackList { grid-template-columns: 1fr; }
+}
+/* Give wordmark logos enough space to remain recognizable. */
+.tech-logo-wordmark { flex-basis: 48px; width: 48px; }
+.tech-logo-wordmark img { width: 44px; height: 28px; }
+#jobTechStackList li > span:last-child { min-width: 0; overflow-wrap: anywhere; }
