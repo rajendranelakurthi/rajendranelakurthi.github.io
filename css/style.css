@@ -1959,3 +1959,5 @@ textarea.form-footer { height: auto; }
 .tech-logo-wordmark { flex-basis: 48px; width: 48px; }
 .tech-logo-wordmark img { width: 44px; height: 28px; }
 #jobTechStackList li > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+
+.tech-ai-icon { color: #7352b5; font-size: 24px; }

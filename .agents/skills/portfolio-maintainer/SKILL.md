@@ -31,16 +31,19 @@ When adjusting styling, verify both existing legacy rules and later overrides. A
 
 ## Experience and job duties
 
-Each company owns an independent hidden list immediately after its `View job duties` button:
+Each company owns independent hidden duties and tech-stack lists after its `View job duties` button:
 
 ```html
-<button class="job-duties-trigger" data-duties="duties-company">...</button>
+<button class="job-duties-trigger" data-duties="duties-company" data-stack="stack-company">...</button>
 <ul id="duties-company" class="job-duties-source" hidden>
     <li>Company-specific responsibility or achievement.</li>
 </ul>
+<ul id="stack-company" class="job-duties-source" hidden>
+    <li><span class="tech-logo" aria-hidden="true"><img src="img/tools/tool.svg" alt="" width="32" height="32"></span><span>Tool name</span></li>
+</ul>
 ```
 
-The shared popup copies the selected list into `#jobDutiesList`. Never put company responsibilities directly into the shared modal and never reuse one company's list for another.
+The shared popup copies the selected duties into `#jobDutiesList` and tools into `#jobTechStackList`. Show roles and responsibilities on the left and the tech stack on the right; stack these sections on smaller screens. Never put company content directly into the shared modal or reuse one company's lists for another.
 
 When editing duties:
 
@@ -49,6 +52,14 @@ When editing duties:
 - Keep named technologies accurate and consistently capitalized.
 - Preserve quantified outcomes and consolidate only true duplicates.
 - Allow any number of list items; long lists must remain comfortably scrollable in the popup.
+
+## Company tech-stack updates
+
+- Whenever Rajendra adds a technology to any company/project tech stack, include its logo in the same change without requiring a separate logo request.
+- Reuse local assets in `img/tools/` first. For missing logos, obtain authentic product logos from official sources or established collections such as Devicon, Simple Icons, or Dashboard Icons; save them locally and record the source in `img/tools/SOURCES.md`.
+- Keep visible tool names beside decorative logos (`alt=""` within `aria-hidden="true"`), preserve logo proportions, and verify each new image reference and SVG/PNG file.
+- For generic categories such as LLM, use an appropriate neutral icon from the existing icon library. Do not imply use of a specific vendor. If a product logo cannot be obtained, use a readable fallback and disclose the limitation.
+- Add tools only to the requested company's hidden stack list; preserve existing tools and duties unless instructed otherwise.
 
 ## Social and contact behavior
 

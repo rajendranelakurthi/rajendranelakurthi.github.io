@@ -4,6 +4,12 @@ Logos identify technologies used in professional roles. Names and logos belong t
 
 ## Added product logos
 
+- Milvus: https://github.com/simple-icons/simple-icons/blob/develop/icons/milvus.svg
+- Qdrant: https://github.com/simple-icons/simple-icons/blob/develop/icons/qdrant.svg
+- AKS: https://github.com/homarr-labs/dashboard-icons/blob/main/svg/azure-kubernetes-services.svg
+- EKS: https://github.com/awslabs/aws-icons-for-plantuml/blob/main/dist/Containers/ElasticKubernetesService.png
+- LLM: neutral comments icon from the locally bundled Font Awesome 4.1 collection; this generic category is not attributed to a specific model vendor.
+
 - Linode: https://github.com/homarr-labs/dashboard-icons/blob/main/svg/linode.svg
 
 - Databricks: https://github.com/simple-icons/simple-icons/blob/develop/icons/databricks.svg
