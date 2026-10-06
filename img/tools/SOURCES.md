@@ -4,6 +4,8 @@ Logos identify technologies used in professional roles. Names and logos belong t
 
 ## Added product logos
 
+- Black Duck: https://assets.blackduck.com/images/v1776700396/BlackDuckLogo/BlackDuckLogo.svg (official website logo, geometry and colors preserved).
+
 - Milvus: https://github.com/simple-icons/simple-icons/blob/develop/icons/milvus.svg
 - Qdrant: https://github.com/simple-icons/simple-icons/blob/develop/icons/qdrant.svg
 - AKS: https://github.com/homarr-labs/dashboard-icons/blob/main/svg/azure-kubernetes-services.svg

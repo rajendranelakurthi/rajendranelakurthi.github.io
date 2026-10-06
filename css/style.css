@@ -1961,3 +1961,8 @@ textarea.form-footer { height: auto; }
 #jobTechStackList li > span:last-child { min-width: 0; overflow-wrap: anywhere; }
 
 .tech-ai-icon { color: #7352b5; font-size: 24px; }
+
+/* Keep the wide Black Duck wordmark legible within the tool grid. */
+#jobTechStackList .tech-tool-wide { grid-column: 1 / -1; }
+.tech-logo-blackduck { flex-basis: 108px; width: 108px; }
+.tech-logo-blackduck img { width: 100px; height: 28px; }
